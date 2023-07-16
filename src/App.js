@@ -28,31 +28,29 @@ const App = () => {
   );
 
   return (
-    <div className="container">
+    <div className="container" style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
       <div>
-      <h1 className="title">Employee List</h1>
-      <input
-        type="text"
-        placeholder="Search by first name"
-        value={searchText}
-        onChange={handleSearch}
-        className="search-input"
-      />
+        <h1 className="title">Employee List</h1>
+        <input
+          type="text"
+          placeholder="Search by first name"
+          value={searchText}
+          onChange={handleSearch}
+          className="search-input"
+        />
       </div>
       <div className="main-employee-list">
-      <ul className="employee-list">
-        {filteredEmployees.map((employee) => (
-          <li key={employee.id} className="employee-item">
-            <div className="avatar-container">
-              <span className="employee-id">{employee.id}</span>
-              <img src={employee.avatar} alt={employee.first_name} className="employee-avatar" />
-              <span className="employee-name">{employee.first_name}</span>
-            </div>
-            
-            
-          </li>
-        ))}
-      </ul>
+        <ul className="employee-list">
+          {filteredEmployees.map((employee) => (
+            <li key={employee.id} className="employee-item">
+              <div className="avatar-container">
+                <span className="employee-id">{employee.id}</span>
+                <img src={employee.avatar} alt={employee.first_name} className="employee-avatar" />
+                <span className="employee-name">{employee.first_name}</span>
+              </div>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );
