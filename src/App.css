@@ -31,9 +31,10 @@
   }
   
   .employee-list {
-    list-style-type: none;
+    /* list-style-type: none; */
     padding: 0;
     text-align: center !important;
+    
   }
   
   .employee-item {
@@ -48,13 +49,15 @@
     width: 60px;
     margin-bottom: 10px;
     background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease-in-out;
+    border-radius: 20px;
+    border: 2px solid black;
+    /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out; */
   }
   
   .employee-item:hover {
     background-color: #f6f7f9;
+    
   }
   
   .avatar-container {
@@ -62,6 +65,7 @@
     width: 60px;
     height: 60px;
     border-radius: 70%;
+    
     /* overflow: hidden; */
     /* margin-right: 15px; */
     text-align: center !important;
@@ -96,6 +100,7 @@
 
   .main-employee-list {
     text-align: center;
+   
   }
   
   
