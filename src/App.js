@@ -28,7 +28,7 @@ const App = () => {
   );
 
   return (
-    <div className="container" style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
+    <div className="container" >
       <div>
         <h1 className="title">Employee List</h1>
         <input
